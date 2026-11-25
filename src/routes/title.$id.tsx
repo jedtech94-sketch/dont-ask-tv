@@ -6,7 +6,7 @@ import { Row } from "@/components/tv/Row";
 import { TrailerButton } from "@/components/tv/Trailer";
 import { useCatalog } from "@/hooks/useCatalog";
 import { isInWatchlist, toggleWatchlist, useLocalStore, watchlistStore } from "@/lib/store";
-import { getTitleById } from "@/lib/server/catalog";
+import { getTitleById } from "@/lib/api/catalog";
 
 export const Route = createFileRoute("/title/$id")({
   loader: async ({ params }) => {

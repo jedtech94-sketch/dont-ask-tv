@@ -1,10 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 
-import { getArchiveMovies } from "@/lib/server/archive";
-import { getTitleById } from "@/lib/server/catalog";
-import { getLiveChannels } from "@/lib/server/liveChannels";
-import { getSportsData } from "@/lib/server/sports";
-import { getHomeCatalog, searchTitles } from "@/lib/server/tmdb";
+import { getArchiveMovies } from "@/lib/api/archive";
+import { getTitleById } from "@/lib/api/catalog";
+import { getLiveChannels } from "@/lib/api/liveChannels";
+import { getSportsData } from "@/lib/api/sports";
+import { getHomeCatalog, searchTitles } from "@/lib/api/tmdb";
 import type { HomeCatalog, SportsData } from "@/lib/types";
 
 const EMPTY_CATALOG: HomeCatalog = {
